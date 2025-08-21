@@ -28,7 +28,8 @@ class Persona {
     this.nombre = nombre;
     this.apellido = apellido;
     this.edad = edad;
-    assert(edad >= 18, mensaje = 'El usuario es Mayor de edad');
+    assert(edad >= 18, 'EL usuario Debe ser mayor de edad');
+    print('El UsusarioEs Mayor de Edad');
   }
 
   Persona.apiData(Map<String, dynamic> datos)
@@ -41,3 +42,4 @@ class Persona {
     return 'Datos de Persona -> Nombre: $nombre, Apellido: $apellido, Edad: $edad - $mensaje';
   }
 }
+
